@@ -2,12 +2,11 @@ import React from 'react';
 import Head from 'next/head';
 import {
   Placeholder,
-  VisitorIdentification,
+  //VisitorIdentification,
   getPublicUrl,
   LayoutServiceData,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Navigation from 'src/Navigation';
-
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore editors.
 // If you're not supporting Sitecore editors, you can remove this.
@@ -23,7 +22,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   return (
     <>
       <Head>
-        <title>{route?.fields?.Title?.value || 'Page'}</title>
+        <title>{route?.fields?.pageTitle?.value || 'Page'}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
       </Head>
 
@@ -33,13 +32,16 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         For XM (CMS-only) apps, this should be removed.
 
         VI detection only runs once for a given analytics ID, so this is not a recurring operation once cookies are established.
-      */}
-      <VisitorIdentification />
+
+        <VisitorIdentification />
+      */                
+      }
+      
+      
 
       <Navigation />
       {/* root placeholder for the app, which we add components to using route data */}
       <div className="container">
-        <h1>Hello World</h1>
 
         {route && (
           <Placeholder
@@ -47,8 +49,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
             rendering={route}
           />
         )}
-
-        <h2>The End</h2>
+        
       </div>
     </>
   );

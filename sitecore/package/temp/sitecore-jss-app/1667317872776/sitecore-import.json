@@ -1,0 +1,115 @@
+{
+  "templates": [
+    {
+      "name": "App Route",
+      "displayName": "App Route",
+      "fields": [
+        {
+          "name": "pageTitle",
+          "displayName": "Page Title",
+          "section": "Page Metadata",
+          "type": "Single-Line Text"
+        }
+      ],
+      "insertOptions": [
+        "App Route"
+      ],
+      "route": false,
+      "defaultRoute": true
+    },
+    {
+      "name": "ContentBlock",
+      "icon": "Office/16x16/document_tag.png",
+      "fields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        },
+        {
+          "name": "content",
+          "type": "Rich Text"
+        }
+      ]
+    }
+  ],
+  "placeholders": [
+    {
+      "name": "jss-main",
+      "displayName": "Main"
+    },
+    {
+      "name": "jss-tabs",
+      "displayName": "Tabs",
+      "id": "tabs-placeholder"
+    }
+  ],
+  "appName": "sitecore-jss-app",
+  "language": "en",
+  "renderings": [
+    {
+      "name": "ContentBlock",
+      "icon": "Office/16x16/document_tag.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "ContentBlock"
+    }
+  ],
+  "wipeExisting": true,
+  "rootPlaceholders": [
+    "jss-main"
+  ],
+  "items": {
+    "routes": [
+      {
+        "id": "home-page",
+        "name": "home",
+        "layout": {
+          "renderings": [
+            {
+              "renderingName": "ContentBlock",
+              "placeholderKey": "/jss-main",
+              "placeholderName": "jss-main",
+              "dataSource": {
+                "name": "home-jss-main-ContentBlock-1",
+                "displayName": "ContentBlock-1",
+                "template": "ContentBlock",
+                "fields": [
+                  {
+                    "name": "heading",
+                    "value": "Welcome to Sitecore JSS"
+                  },
+                  {
+                    "name": "content",
+                    "value": "<p>Thanks for using JSS!! Here are some resources to get you started:</p>\n\n<h3><a href=\"https://jss.sitecore.com\" rel=\"noopener noreferrer\">Documentation</a></h3>\n<p>The official JSS documentation can help you with any JSS task from getting started to advanced techniques.</p>\n\n<h3><a href=\"/styleguide\">Styleguide</a></h3>\n<p>The JSS styleguide is a living example of how to use JSS, hosted right in this app.\nIt demonstrates most of the common patterns that JSS implementations may need to use,\nas well as useful architectural patterns.</p>\n\n<h3><a href=\"/graphql\">GraphQL</a></h3>\n<p>JSS features integration with the Sitecore GraphQL API to enable fetching non-route data from Sitecore - or from other internal backends as an API aggregator or proxy.\nThis route is a living example of how to use an integrate with GraphQL data in a JSS app.</p>\n\n<div class=\"alert alert-dark\">\n  <h4>This app is a boilerplate</h4>\n  <p>The JSS samples are a boilerplate, not a library. That means that any code in this app is meant for you to own and customize to your own requirements.</p>\n  <p>Want to change the lint settings? Do it. Want to read manifest data from a MongoDB database? Go for it. This app is yours.</p>\n</div>\n\n<div class=\"alert alert-dark\">\n  <h4>How to start with an empty app</h4>\n  <p>To start with a fresh app with no boilerplate, run <code>jss create {name of your app} nextjs --empty</code>. Note, disconnected mode is not supported this way</p>\n  <p>To remove all of the default sample content (the Styleguide and GraphQL routes) and start out with an empty JSS app:</p>\n  <ol>\n    <li>Delete <code>/data/dictionary/*.yml</code></li>\n    <li>Delete <code>/data/routes/styleguide</code> and <code>/data/routes/graphql</code></li>\n    <li>Delete <code>/data/content/Styleguide</code></li>\n    <li>Delete <code>/data/component-content/Styleguide</code></li>\n    <li>Delete <code>/sitecore/definitions/components/Styleguide*</code>, <code>/sitecore/definitions/templates/Styleguide*</code>, and <code>/sitecore/definitions/components/GraphQL*</code></li>\n    <li>Delete <code>graphql-let</code> command from <code>bootstrap</code> npm command in <code>package.json</code> until you create <code>.graphql</code> files</li>\n    <li>Delete <code>/src/components/*</code></li>\n  </ol>\n</div>\n"
+                  }
+                ]
+              },
+              "renderingParams": [],
+              "uid": "{2C4A53CC-9DA8-5F51-9D79-6EE2FC671B2D}"
+            }
+          ],
+          "placeholders": [
+            "jss-main"
+          ]
+        },
+        "fields": [
+          {
+            "name": "pageTitle",
+            "value": "Welcome to Sitecore JSS"
+          }
+        ]
+      }
+    ],
+    "nonRoutes": []
+  },
+  "dictionary": []
+}

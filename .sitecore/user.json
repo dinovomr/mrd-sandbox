@@ -1,0 +1,14 @@
+{
+  "endpoints": {
+    "default": {
+      "allowWrite": false,
+      "host": "https://mrd-sandbox-02-cm.sitecoredemo.com",
+      "authority": "https://mrd-sandbox-02-id.sitecoredemo.com/",
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkJCN0ExMzRDOUUyQjQ0NjQ1ODFERUQ0QTI3NDdFNUIwRkE4NzM2NUFSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6InUzb1RUSjRyUkdSWUhlMUtKMGZsc1BxSE5sbyJ9.eyJuYmYiOjE2NjczMTQxMjgsImV4cCI6MTY2NzMxNzcyOCwiaXNzIjoiaHR0cHM6Ly9tcmQtc2FuZGJveC0wMi1pZC5zaXRlY29yZWRlbW8uY29tIiwiYXVkIjpbInNpdGVjb3JlLnByb2ZpbGUuYXBpIiwiaHR0cHM6Ly9tcmQtc2FuZGJveC0wMi1pZC5zaXRlY29yZWRlbW8uY29tL3Jlc291cmNlcyJdLCJjbGllbnRfaWQiOiJEZXZpY2UiLCJzdWIiOiIxMWMyYzA5NWViOTc0Y2MwOWYwYzE0NDViMGZlYzBmZiIsImF1dGhfdGltZSI6MTY2NzMxNDEyMiwiaWRwIjoibG9jYWwiLCJuYW1lIjoic2l0ZWNvcmVcXHN1cGVydXNlciIsImVtYWlsIjoibm9yZXBseUBzaXRlY29yZWRlbW8uY29tIiwiaHR0cDovL3d3dy5zaXRlY29yZS5uZXQvaWRlbnRpdHkvY2xhaW1zL2lzQWRtaW4iOiJUcnVlIiwianRpIjoiMDc3RjIyQ0U0NzIxRTlDNDc2OTFBNzg5MjYzRkRBOTUiLCJzaWQiOiI1MzIzQTNENEVERjBGM0MxN0Y2QkFFRkFGNDYyNTM5NyIsImlhdCI6MTY2NzMxNDEyOCwic2NvcGUiOlsic2l0ZWNvcmUucHJvZmlsZS5hcGkiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsicHdkIl19.M0iq6vvq4y_nd7TV7AQc-leftgtMDlmgm-oplUsk4jm7JWKeJ_taAQznGykHdva6vft4YhOnlU7kND0KRWhgYhajR7hkhWTAR-h5CUS4o8U4GgicN3YmlAwI-4l6TybEgZAOKEz-Kjz8K-8XhdnvpxblYD81kH2rlLGYuwRmXPvkv6uifnlS6jek-AxHiUwqw4hfyxXuAGYsWBUCSDxPvqMWRfmsVMXJJquRAq3bHmNVddualmcBIwOOI32iuRn0VJ88BWncm9QbFG--w3_mAEL17K5VImh19HilWwfxGLTylRWwZAVoIUGO4wvz4NLENouTP5Oj8ZehgiNF5iBejg",
+      "refreshToken": "7DFE3F5AE80DAC06CDD963DF8EFD0B82611EBF87F338B43F6F25B9522DA37818",
+      "clientId": "Device",
+      "variables": {}
+    }
+  },
+  "$schema": "./schemas/UserConfiguration.schema.json"
+}
