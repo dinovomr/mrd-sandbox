@@ -32,7 +32,7 @@ jobs:
           output_location: "out" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
         env:
-          is_static_export: true
+          IS_STATIC_EXPORT: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
