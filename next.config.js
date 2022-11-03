@@ -1,6 +1,7 @@
 const jssConfig = require('./src/temp/config');
 const packageConfig = require('./package.json').config;
-const { getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs');
+// const { getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs');
+import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
 const plugins = require('./src/temp/next-config-plugins') || {};
 
 const publicUrl = getPublicUrl();
@@ -18,8 +19,7 @@ const nextConfig = {
   // Make the same PUBLIC_URL available as an environment variable on the client bundle
   // TODO: Hard Coded to test
   env: {
-    //PUBLIC_URL: publicUrl,
-    PUBLIC_URL: "https://black-cliff-0ccb7620f.2.azurestaticapps.net",
+    PUBLIC_URL: publicUrl,
   },
 
   /*
