@@ -16,8 +16,10 @@ const nextConfig = {
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
 
   // Make the same PUBLIC_URL available as an environment variable on the client bundle
+  // TODO: Hard Coded to test
   env: {
-    PUBLIC_URL: publicUrl,
+    //PUBLIC_URL: publicUrl,
+    PUBLIC_URL: "https://black-cliff-0ccb7620f.2.azurestaticapps.net",
   },
 
   /*
