@@ -27,7 +27,7 @@
 
 # sitecore
 scjssconfig.json
-*.deploysecret.config
+#*.deploysecret.config
 
 # vercel
 .vercel
