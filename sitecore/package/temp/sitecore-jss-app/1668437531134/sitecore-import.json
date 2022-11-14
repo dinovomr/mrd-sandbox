@@ -40,6 +40,22 @@
           "type": "Rich Text"
         }
       ]
+    },
+    {
+      "name": "MattComponent",
+      "icon": "Office/16x16/document_tag.png",
+      "fields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        }
+      ],
+      "allFields": [
+        {
+          "name": "heading",
+          "type": "Single-Line Text"
+        }
+      ]
     }
   ],
   "placeholders": [
@@ -61,6 +77,12 @@
       "icon": "Office/16x16/document_tag.png",
       "exposedPlaceholders": [],
       "dataSourceTemplate": "ContentBlock"
+    },
+    {
+      "name": "MattComponent",
+      "icon": "Office/16x16/document_tag.png",
+      "exposedPlaceholders": [],
+      "dataSourceTemplate": "MattComponent"
     }
   ],
   "wipeExisting": true,
@@ -95,6 +117,24 @@
               },
               "renderingParams": [],
               "uid": "{2C4A53CC-9DA8-5F51-9D79-6EE2FC671B2D}"
+            },
+            {
+              "renderingName": "MattComponent",
+              "placeholderKey": "/jss-main",
+              "placeholderName": "jss-main",
+              "dataSource": {
+                "name": "home-jss-main-MattComponent-2",
+                "displayName": "MattComponent-2",
+                "template": "MattComponent",
+                "fields": [
+                  {
+                    "name": "heading",
+                    "value": "Look at me!"
+                  }
+                ]
+              },
+              "renderingParams": [],
+              "uid": "{8D5E2B35-285A-5ED1-B096-22344C9F715A}"
             }
           ],
           "placeholders": [

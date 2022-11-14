@@ -8,8 +8,8 @@ type MattComponentProps = ComponentProps & {
 };
 
 const MattComponent = (props: MattComponentProps): JSX.Element => (
-  <div>
-    <p>MattComponent Component</p>
+  <div style={{backgroundColor: 'yellow'}}>
+    <p style={{fontSize: '24px', color: 'blue'}}>MattComponent Component</p>
     <Text field={props.fields.heading} />
   </div>
 );

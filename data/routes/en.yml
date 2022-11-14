@@ -61,3 +61,6 @@ placeholders:
               <li>Delete <code>/src/components/*</code></li>
             </ol>
           </div>
+    - componentName: MattComponent
+      fields:
+        heading: Look at me!
